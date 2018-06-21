@@ -61,7 +61,7 @@ jobs:
       - *build_artifacts
       - run:
           name: Deploy to the staging environment
-          command: aws s3 sync dist s3://${DEV_BUCKET} --delete --acl public-read
+          command: aws s3 sync dist s3://${STAGING_BUCKET} --delete --acl public-read
 
   deploy_prod:
     <<: *defaults

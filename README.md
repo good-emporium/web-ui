@@ -9,9 +9,9 @@ http://good-emporium-web-dev.s3-website.us-east-2.amazonaws.com/your-branch-name
 
 When new code is merged to master, it becomes available at:
 ```
-http://good-emporium-web-dev.s3-website.us-east-2.amazonaws.com
+http://good-emporium-web-staging.s3-website.us-east-2.amazonaws.com
 ```
-Let's call that "staging," and is meant to be used for a final review before releasing the code to production.
+This is meant to be used for a final review before releasing the code to production.
 
 ## Release
 
