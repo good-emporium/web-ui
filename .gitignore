@@ -1,2 +1,8 @@
-/node_modules
+!dist/index.html
+
+*.iml
+
 .env
+.idea
+dist
+node_modules
