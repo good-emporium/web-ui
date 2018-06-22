@@ -16,7 +16,7 @@ This is meant to be used for a final review before releasing the code to product
 ## Release
 
 To deploy to production, create a new [release](https://github.com/good-emporium/web-ui/releases/new).
-1. Set the 'tag' and 'release title' to something like `v1.0`.
+1. Set the 'tag' and 'release title' to something like [`v1.0.0`](https://semver.org).
 It should be higher than the [last version](https://github.com/good-emporium/web-ui/releases).
 2. The target should be `master`.
 
