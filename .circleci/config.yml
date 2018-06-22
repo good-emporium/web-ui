@@ -52,7 +52,7 @@ jobs:
       - *build_artifacts
       - run:
           name: Deploy to a dev environment
-          command: aws s3 sync dist s3://${DEV_BUCKET}/${CIRCLE_BRANCH} --delete --acl public-read
+          command: aws s3 sync dist s3://${DEV_BUCKET}/${CIRCLE_BRANCH} --delete
 
   deploy_staging:
     <<: *defaults
@@ -61,7 +61,7 @@ jobs:
       - *build_artifacts
       - run:
           name: Deploy to the staging environment
-          command: aws s3 sync dist s3://${STAGING_BUCKET} --delete --acl public-read
+          command: aws s3 sync dist s3://${STAGING_BUCKET} --delete
 
   deploy_prod:
     <<: *defaults
@@ -70,7 +70,7 @@ jobs:
       - *build_artifacts
       - run:
           name: Deploy to the prod environment
-          command: aws s3 sync dist s3://${PROD_BUCKET} --delete --acl public-read
+          command: aws s3 sync dist s3://${PROD_BUCKET} --delete
 
 workflows:
   version: 2
