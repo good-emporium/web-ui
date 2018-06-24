@@ -1,8 +1,6 @@
-!dist/index.html
-
 *.iml
+dist/bundle.js
 
 .env
 .idea
-dist
 node_modules
