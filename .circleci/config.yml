@@ -78,10 +78,8 @@ workflows:
     jobs:
       - build:
           filters:
-            branches:
-              ignore: master
             tags:
-              ignore: /^v.*/
+              only: /.*/
 
       - deploy_dev:
           requires:
@@ -93,6 +91,8 @@ workflows:
               ignore: /^v.*/
 
       - deploy_staging:
+          requires:
+            - build
           filters:
             branches:
               only: master
@@ -100,6 +100,8 @@ workflows:
               ignore: /^v.*/
 
       - deploy_prod:
+          requires:
+            - build
           filters:
             branches:
               ignore: /.*/
