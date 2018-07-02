@@ -1,5 +1,14 @@
 # web-ui
 
+#Dependencies
+NPM- Installs with Node.js here: 
+https://nodejs.org/en/
+
+#Setting Up
+Clone Repo
+Do an NPM Install inside the local folder
+Run NPM Start to run localhost
+
 ## Live Previews
 
 When you open a new pull request, it's built and made available at:
