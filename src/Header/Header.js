@@ -1,13 +1,16 @@
 import React from 'react';
-
+import Divider from './Divider';
+import Logo from './Logo';
 const header = () => {
 return (
 <div className="container">  
-            <a href="index.html">
-                <img src="./../assets/img/good_emporium_logo_color.svg" />
-            </a>
-            
-        <img src="./../assets/img/colored_divider.png" height="5px" width="100%" />
+
+
+    <Logo />
+    <Divider />
+
+
+
 </div>
 )
 
