@@ -4,10 +4,12 @@
 NPM- Installs with Node.js here: 
 https://nodejs.org/en/
 
-#Setting Up
-Clone Repo
-Do an NPM Install inside the local folder
-Run NPM Start to run localhost
+## Setting Up
+-Ensure that you have [Node.js](https://nodejs.org/en/) installed. We recommend the latest in the v8 series as that is the version that our CI/CD tool is using to build all of the deployed code.
+-
+-1. Clone this repo
+-2. `cd` into the local directory and execute `npm install`
+-3. Run `npm start` to start a local server instance
 
 ## Live Previews
 
