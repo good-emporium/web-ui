@@ -1,29 +1,23 @@
 import React from 'react';
-const bigTextStyle={
-fontSize:'60px'
-};
-const normalTextStyle={
-fontSize:'20px'
-};
-
-
-
+import Styles from './../HomePage.css';
 
 const goodGoesToWork = () => {
 return (
-<div className="container">  
+<div className='d-flex flex-column box1 text-left my-5'>  
 <div >
         <div >
-            <h2 style={bigTextStyle}> Where good <br /> goes to work </h2>
+            <h2 className={Styles.BigText}> where <span className={Styles.highlight}>good</span>  <br /> goes to work </h2>
         </div>
-        <div>
-            <p style={normalTextStyle}>Search for your cause</p>
-            <p style={normalTextStyle}>Choose your area.</p>
-            <p style={normalTextStyle}>Do some good.</p>
+        <div className={Styles.NormalText}>
+            <p>Search for your <span className={Styles.highlight}>cause</span></p>
+            <p>Choose your <span className={Styles.highlight}>area.</span></p>
+            <p>Do some <span className={Styles.highlight}>good.</span></p>
         </div>
-        <div>
-            <p style={normalTextStyle}>Thousands of organizations are doing good work in your area, but finding which ones need your help can be tough. That's why the <strong>good</strong> emporium was created.</p>
-            <p style={normalTextStyle}>Connected with<a href="http://SocialGood.US"> SocialGood.US</a> and the United Nations <a href="https://www.globalgoals.org/">Sustainable Development Goals</a>,<strong> good</strong> emporium helps good people do good.</p>
+        <div className='my-3'>
+            <div className={Styles.NormalText}>
+                <p>Thousands of organizations are doing good work in your area, but finding which ones need your help can be tough. That's why the  <span className={Styles.goodemporium}> <strong>good</strong>emporium </span> was created.</p><br />
+                <p>Connected with<a href="http://SocialGood.US"> SocialGood.US</a> and the United Nations <a href="https://www.globalgoals.org/">Sustainable Development Goals</a>,<span className={Styles.goodemporium}><strong> good</strong>emporium</span> helps good people do good.</p>
+            </div>
         </div>
     </div>
 

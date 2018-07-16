@@ -3,7 +3,7 @@ import React from 'react';
 const charityTypeMenu = () => {
 return (
 <div className="container">  
-    <div class="selection d-flex flex-row">
+    <div className="row">
         <a href="#">
             <p className='org-choice p-2'>non-profit</p>
         </a>
