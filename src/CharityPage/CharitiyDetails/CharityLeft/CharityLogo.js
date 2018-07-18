@@ -2,11 +2,8 @@ import React from 'react';
 
 const charityLogo = () => {
 return (
-<div className="container">  
-    <img src="../../../src/assets/img/MobileLoavesFishesLOGO.jpg" />
-
-
-
+<div>  
+    <img src="./../../assets/img/MobileLoavesFishesLOGO.jpg" width='300px' height='300px'/>
 </div>
 )
 

@@ -7,7 +7,7 @@ class App extends Component {
   render() {
     return (
       <div className={Style.body}>
-      <HomePage />
+      <GoalsPage />
       </div>
     );
   }

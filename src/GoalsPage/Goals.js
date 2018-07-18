@@ -6,7 +6,7 @@ import Footer from './../Footer/Footer';
 
 const goals = () => {
     return (
-    <div className="container">  
+    <div>  
         <Header />
        <CharityTypeMenu />
        <GroupOfCharities />

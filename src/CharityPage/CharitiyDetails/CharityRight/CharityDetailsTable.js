@@ -1,4 +1,5 @@
 import React from 'react';
+import CharityCause from './CharityCause';
 
 const charityDetailsTable = () => {
 return (
@@ -21,7 +22,7 @@ return (
             </tr>
             <tr>
               <td>Global Goals</td>
-              <td><img src="../../assets/img/E_SDG goals_icons-individual-rgb-01.png"/></td>
+              <td><CharityCause /></td>
             </tr>
             <tr>
               <td>Industry</td>
