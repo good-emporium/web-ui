@@ -5,7 +5,7 @@ import Divider from './Divider';
 import Logo from './Logo';
 const footer = () => {
 return(
-    <div className="container"> 
+    <div> 
        <Divider />
             <div className="container">
                 <div className="row">

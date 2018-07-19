@@ -2,7 +2,7 @@ import React from 'react';
 
 const divider = () => {
 return (
-<div className="container">  
+<div>  
         <img src="./../assets/img/colored_divider.png" height="5px" width="100%" />
 </div>
 )

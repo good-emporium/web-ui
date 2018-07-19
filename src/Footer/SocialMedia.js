@@ -8,7 +8,10 @@ return (
         <a href="https://www.instagram.com/socialgood.us/"><img src="./../assets/img/SocialMedia/instagram_icon.svg" /></a> &nbsp;    
         <br/>
         <br/>
+        <div className="float-right">
         <a href="https://www.globalgoals.org/"><img src="./../assets/img/sdg_circle.svg" /></a>
+        </div>
+
     </div>
 )
 
