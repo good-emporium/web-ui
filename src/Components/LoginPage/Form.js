@@ -4,10 +4,10 @@ const form = () => {
         <div className="container">
             <form>
                 <h1>Sign In</h1>
-                <label for="username"><b>Username</b></label>
+                <label htmlFor="username"><b>Username</b></label>
                 <input type="text" placeholder="Enter Username" name="username" required />
                 <br />
-                <label for="psw"><b>Password</b></label>
+                <label htmlFor="psw"><b>Password</b></label>
                 <input type="password" placeholder="Enter Password" name="psw" required />
                 <br />
                 <button type="button">Cancel</button>

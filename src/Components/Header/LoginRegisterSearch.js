@@ -17,12 +17,14 @@ const loginRegisterSearch = () => {
         <div>
             <div style={divStyle}>
                 <Link to={'/login/'}>
-                    <a href='#'>Login </a>
+                    Login   
                 </Link>
+                &nbsp;
                 <Link to={'/register/'}>
-                    <a href='#'>Register</a>
+                    Register 
                 </Link>
-                <form className='float-right' autocomplete="off">
+                &nbsp;
+                <form className='float-right' autoComplete="off">
                     <div className="autocomplete">
                         <input type="image" src="../../assets/img/searchicon.svg" width='25px' height='25px' alt="Submit" />
                         <input className={Styles.searchbox} id="myInput" type="text" name="myCountry" placeholder="search to find your good..." />

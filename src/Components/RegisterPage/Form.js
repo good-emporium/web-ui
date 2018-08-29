@@ -5,43 +5,43 @@ const form = () => {
             <form>
                 <h1>Sign Up</h1>
                 <p>Please fill in this form to create an account.</p>
-                <label for="email"><b>Email</b></label>
+                <label htmlFor="email"><b>Email</b></label>
                 <input type="text" placeholder="Enter Email" name="email" required />
                 <br />
-                <label for="username"><b>Username</b></label>
-                <input type="text" placeholder="Enter Username" name="username" required />
+                <label htmlFor="username"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" autoComplete="username" name="username" required />
                 <br />
-                <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required />
+                <label htmlFor="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" autoComplete="new-password" required />
                 <br />
-                <label for="psw-repeat"><b>Repeat Password</b></label>
-                <input type="password" placeholder="Repeat Password" name="psw-repeat" required />
+                <label htmlFor="psw-repeat"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" autoComplete="new-password"  required />
                 <br />
-                <label for="firstName"><b>First Name</b></label>
-                <input type="text" placeholder="Enter First Name" name="firstName" />
+                <label htmlFor="firstName"><b>First Name</b></label>
+                <input type="text" placeholder="Enter First Name" name="firstName"  />
                 <br />
-                <label for="lastName"><b>Last Name</b></label>
+                <label htmlFor="lastName"><b>Last Name</b></label>
                 <input type="text" placeholder="Enter Last Name" name="lastName" />
                 <br />
-                <label for="address"><b>Last Name</b></label>
+                <label htmlFor="address"><b>Last Name</b></label>
                 <input type="text" placeholder="Enter Address" name="address" />
                 <br />
-                <label for="city"><b>City</b></label>
+                <label htmlFor="city"><b>City</b></label>
                 <input type="text" placeholder="Enter City" name="city" />
                 <br />
-                <label for="regionState"><b>State or Region</b></label>
+                <label htmlFor="regionState"><b>State or Region</b></label>
                 <input type="text" placeholder="Enter State or Region" name="regionState" />
                 <br />
-                <label for="country"><b>Country</b></label>
+                <label htmlFor="country"><b>Country</b></label>
                 <input type="text" placeholder="Enter Country" name="country" />
                 <br />
-                <label for="zipCode"><b>Zip Code</b></label>
+                <label htmlFor="zipCode"><b>Zip Code</b></label>
                 <input type="text" placeholder="Enter Zip Code" name="zipCode" />
                 <br />
-                <label for="phoneNumber"><b>Phone Number</b></label>
+                <label htmlFor="phoneNumber"><b>Phone Number</b></label>
                 <input type="text" placeholder="Enter Phone Number" name="phoneNumber" />
                 <br />
-                <label for="bio"><b>Bio</b></label>
+                <label htmlFor="bio"><b>Bio</b></label>
                 <input type="text" placeholder="Enter Bio" name="bio" />
                 <br />
                 <button type="button">Cancel</button>
