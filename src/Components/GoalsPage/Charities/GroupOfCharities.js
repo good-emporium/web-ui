@@ -26,7 +26,6 @@ class GroupOfCharities extends Component {
   render() {
     return (
       <div className="orgs-table d-flex flex-row flex-wrap">
-        {this.state.users.pop}
         <IndividualCharity />
         <IndividualCharity />
         <IndividualCharity />

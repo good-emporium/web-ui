@@ -10,7 +10,7 @@ const individualCharity = () => {
 
             <img src="../../assets/img/newentry.png" alt='CharityLogo' />
             <Link to={'/org/'}>
-            <a>Organization Name</a>
+            <div>Organization Name</div>
             </Link>
             <p>Description</p>
             <Route path="/org/" component={CharityPage} />

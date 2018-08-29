@@ -4,11 +4,11 @@ import HomePage from '../HomePage/HomePage';
 const logo = () => {
     return (
         <div className="container">
-            <a>
-                <Link to={'/goal/poverty'}>
+            
+                <Link to={'/'}>
                     <img src="./../assets/img/good_emporium_logo_color.svg" />
                 </Link>
-            </a>
+            
         </div>
     )
 

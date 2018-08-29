@@ -29,8 +29,11 @@ const form = () => {
                 <label for="city"><b>City</b></label>
                 <input type="text" placeholder="Enter City" name="city" />
                 <br />
-                <label for="state"><b>State</b></label>
-                <input type="text" placeholder="Enter State" name="state" />
+                <label for="regionState"><b>State or Region</b></label>
+                <input type="text" placeholder="Enter State or Region" name="regionState" />
+                <br />
+                <label for="country"><b>Country</b></label>
+                <input type="text" placeholder="Enter Country" name="country" />
                 <br />
                 <label for="zipCode"><b>Zip Code</b></label>
                 <input type="text" placeholder="Enter Zip Code" name="zipCode" />
