@@ -6,6 +6,8 @@ import CharityPage from './Components/CharityPage/Charity';
 import LoginPage from './Components/LoginPage/Form';
 import RegisterPage from './Components/RegisterPage/Form';
 import Style from './App.css';
+import './scss/styles.scss'
+
 class App extends Component {
   render() {
     return (
