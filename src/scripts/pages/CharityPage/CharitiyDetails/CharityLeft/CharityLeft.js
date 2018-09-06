@@ -4,19 +4,19 @@ import CharityData from './CharityData';
 import CharityEmailList from './CharityEmailListSignUp';
 import CharityLogo from './CharityLogo';
 import CharityName from './CharityName';
-import Divider from '../../../../Header/Divider';
+import Divider from '../../../../components/Divider';
 
 const charityLeft = () => {
-return (
-<div className="container">  
-    <CharityLogo />
-    <CharityName />
-    <CharityData />
-    <CharityContactInfo />
-    <Divider />
-    <CharityEmailList />
-</div>
-)
+    return (
+        <div className="container">
+            <CharityLogo />
+            <CharityName />
+            <CharityData />
+            <CharityContactInfo />
+            <Divider />
+            <CharityEmailList />
+        </div>
+    )
 
 
 };

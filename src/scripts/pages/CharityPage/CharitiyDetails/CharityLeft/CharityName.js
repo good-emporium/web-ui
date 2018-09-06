@@ -1,10 +1,10 @@
 import React from 'react';
 
 const charityName = () => {
-return (
-<div>  
-</div>
-)
+    return (
+        <div>
+        </div>
+    )
 
 
 };

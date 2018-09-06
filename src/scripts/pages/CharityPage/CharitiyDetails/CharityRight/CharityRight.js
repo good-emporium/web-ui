@@ -4,12 +4,12 @@ import CharityDetailsTable from './CharityDetailsTable';
 import LastUpdated from './LastUpdated';
 
 const charityRight = () => {
-return (
-<div className="container">  
-   <LastUpdated />
-   <CharityDetailsTable />
-</div>
-)
+    return (
+        <div className="container">
+            <LastUpdated />
+            <CharityDetailsTable />
+        </div>
+    )
 
 
 };

@@ -1,0 +1,107 @@
+/* GLOBAL STYLES */
+body {
+  font-family: "Montserrat";
+}
+
+.img {
+  width: "200px";
+  height: "32px";
+}
+
+.ge-blue {
+  color: #18a1db;
+}
+
+.ge-red {
+  color: #EA2033;
+}
+
+.ge-blue-bold {
+  color: #18a1db;
+  font-weight: bold;
+}
+
+.ge-green-bold {
+  color: #8bc540;
+  font-weight: bold;
+}
+
+.large-text {
+  font-size: 60px;
+}
+
+.medium-text {
+  font-size: 20px;
+}
+
+.no-margin-padding {
+  margin: 0;
+  padding: 0;
+}
+
+/* HEADER STYLES */
+.search-box {
+  position: relative;
+  width: 250px;
+  border: 3px solid #000;
+  border-radius: 25px;
+}
+
+.autocomplete {
+  position: relative;
+}
+.autocomplete i.fa-search {
+  position: absolute;
+  top: 9px;
+  left: 10px;
+  color: gray;
+}
+
+/* FOOTER STYLES */
+/* HOMEPAGE STYLES */
+.goal-buttons {
+  height: 125px;
+  width: 125px;
+  margin: 7.5px;
+  transition: transform 0.2s;
+}
+
+.goal-buttons:hover {
+  transform: scale(1.2);
+}
+
+/* CHARITY PAGE STYLES */
+.org-choice:active {
+  font-weight: bold;
+  color: #18a1db;
+}
+
+.org-card {
+  height: 360px;
+  width: 360px;
+  margin: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 5px;
+  background-color: #fafafa;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.19);
+  transition: transform 0.2s;
+}
+.org-card a {
+  color: #ea2033;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+.org-card p {
+  padding: 15px;
+}
+.org-card img {
+  margin: 15px;
+  width: 80px;
+  height: 80px;
+}
+
+.org-card:hover {
+  transform: scale(1.1);
+}
+
+/*# sourceMappingURL=ge-styles.css.map */

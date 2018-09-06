@@ -1,13 +1,13 @@
 import React from 'react';
 
 const charityCause = () => {
-return (
-<div className="container">  
+    return (
+        <div className="container">
 
 
 
-</div>
-)
+        </div>
+    )
 
 
 };
