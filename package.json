@@ -29,22 +29,24 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
+    "css-loader": "^1.0.0",
+    "node-sass": "^4.9.3",
     "nodemon": "^1.18.3",
     "react-hot-loader": "^4.3.4",
-    "webpack": "^4.16.5",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.17.2",
     "webpack-cli": "^3.1.0",
     "webpack-dev-server": "^3.1.5",
     "webpack-merge": "^4.1.4"
   },
   "dependencies": {
     "axios": "^0.18.0",
-    "css-loader": "^1.0.0",
     "prop-types": "^15.6.2",
     "react": "^16.4.2",
     "react-axios": "^2.0.0",
     "react-dom": "^16.4.2",
     "react-router": "^4.3.1",
-    "react-router-dom": "^4.4.0-alpha.1",
-    "style-loader": "^0.21.0"
+    "react-router-dom": "^4.4.0-alpha.1"
   }
 }
