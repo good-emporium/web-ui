@@ -7,18 +7,20 @@ const loginRegisterSearch = () => {
     return (
         <div className='float-right'>
             <div>
+                <span className="nav-links">
                 <Link to={'/login/'}>
                     Login   
                 </Link>
-                &nbsp;
+                </span>
+                <span className="nav-links">
                 <Link to={'/register/'}>
                     Register 
                 </Link>
-                &nbsp;
+                </span>
                 <form className='float-right' autoComplete="off">
                     <div className="autocomplete">
                         <input className="search-box" id="myInput" type="text" name="myCountry" />
-                            <i class="fas fa-search"></i>
+                            <i className="fas fa-search"></i>
                         
                     </div>
                 </form>

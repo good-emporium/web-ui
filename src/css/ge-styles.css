@@ -57,6 +57,10 @@ body {
   color: gray;
 }
 
+.nav-links {
+  padding: 10px;
+}
+
 /* FOOTER STYLES */
 /* HOMEPAGE STYLES */
 .goal-buttons {
