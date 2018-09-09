@@ -1,7 +1,10 @@
 import React from 'react';
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
 const form = () => {
     return (
         <div className="container">
+        <Header />
             <form>
                 <h1>Sign Up</h1>
                 <p>Please fill in this form to create an account.</p>
@@ -47,6 +50,7 @@ const form = () => {
                 <button type="button">Cancel</button>
                 <button type="submit">Sign Up</button>
             </form>
+            <Footer />
         </div>
     )
 
