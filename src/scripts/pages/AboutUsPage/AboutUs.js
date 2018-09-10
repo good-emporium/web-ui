@@ -1,22 +1,20 @@
 import React, { Component } from 'react';
+import Description from './Description';
+import MeetTheTeam from './MeetTheTeam';
 import Header from '../../components/Header/Header';
-import Goals from './Goals/Goals';
 import Footer from '../../components/Footer/Footer';
-import CauseMap from './CauseMap/CauseMap';
 
-const homePage = () => {
+const aboutUs = () => {
     return (
-        <div id='homePage'>
+        <div id='aboutUsPage'>
             <Header />
-            <Goals />
-            <CauseMap />
+            <Description />
+            <MeetTheTeam />
             <Footer />
-
-
         </div>
     )
 
 
 };
 
-export default homePage;
+export default aboutUs;

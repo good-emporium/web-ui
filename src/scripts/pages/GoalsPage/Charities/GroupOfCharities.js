@@ -20,9 +20,7 @@ class GroupOfCharities extends Component {
       .then(newData => this.setState({ users: newData, store: newData }))
       .catch(error => alert(error))
   }
-  filterNames(e) {
-    this.setState({ users: this.state.store.filter(item => item.name.toLowerCase().includes(e.target.value.toLowerCase())) })
-  }
+
   render() {
     return (
       <div className="orgs-table d-flex flex-row flex-wrap">

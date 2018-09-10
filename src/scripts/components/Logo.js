@@ -3,7 +3,7 @@ import { Link, Route } from 'react-router-dom';
 
 const logo = () => {
     return (
-        <div className="container">
+        <div className="d-inline col">
             
                 <Link to={'/'}>
                     <img src="./../assets/img/good_emporium_logo_color.svg" />
