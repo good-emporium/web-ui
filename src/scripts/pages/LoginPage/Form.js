@@ -7,14 +7,15 @@ const form = () => {
         <Header />
             <form>
                 <h1>Sign In</h1>
-                <label htmlFor="username"><b>Username</b></label>
-                <input type="text" placeholder="Enter Username" name="username" required />
-                <br />
-                <label htmlFor="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required />
-                <br />
-                <button type="button">Cancel</button>
-                <button type="submit">Sign In</button>
+                <div className="form-group">
+                    <label htmlFor="username"><b>Username</b></label>
+                    <input type="text" className="form-control" placeholder="Enter Username" name="username" required />
+                </div>
+                <div className="form-group">
+                    <label htmlFor="psw"><b>Password</b></label>
+                    <input type="password" className="form-control" placeholder="Enter Password" name="psw" required />
+               </div>
+                <button className="btn btn-outline-primary" type="submit">Sign In</button>
             </form>
             <Footer />
         </div>

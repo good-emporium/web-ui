@@ -40,6 +40,11 @@ body {
 	padding: 0;
 }
 
+/* BOOTSTRAP OVERRIDE STYLES */
+
+.form-control {
+	max-width: 600px;
+}
 
 /* HEADER STYLES */
 
