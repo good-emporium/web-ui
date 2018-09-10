@@ -5,12 +5,12 @@ import LoginRegisterSearch from './LoginRegisterSearch';
 
 const header = () => {
     return (
-        <div>
-
-
+        <div id='header'>
+        
+            <div className='row'>
             <Logo />
             <LoginRegisterSearch />
-         
+            </div>
             <Divider />
 
 

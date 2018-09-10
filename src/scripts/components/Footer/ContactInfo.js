@@ -1,6 +1,6 @@
 import React from 'react';
 
-const searchBar = () => {
+const contactInfo = () => {
     return (
         <div className="container">
             <p className="no-margin-padding"> 5540 N Lamar Blvd</p>
@@ -14,4 +14,4 @@ const searchBar = () => {
 
 };
 
-export default searchBar;
+export default contactInfo;

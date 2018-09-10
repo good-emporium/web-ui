@@ -5,8 +5,6 @@ const charityDetailsTable = () => {
   return (
     <div className="container">
       <table className="table">
-        <col width="150" />
-        <col width="490px" />
         <tbody>
           <tr>
             <td>CEO</td>

@@ -5,6 +5,7 @@ import GoalsPage from './pages/GoalsPage/Goals';
 import CharityPage from './pages/CharityPage/Charity';
 import LoginPage from './pages/LoginPage/Form';
 import RegisterPage from './pages/RegisterPage/Form';
+import AboutUsPage from './pages/AboutUsPage/AboutUs'
 import '../scss/ge-styles.scss'
 import '../scss/ge-styles-responsive.scss'
 
@@ -18,6 +19,7 @@ class App extends Component {
           <Route path="/org/" component={CharityPage} />
           <Route path="/login/" component={LoginPage} />
           <Route path="/register/" component={RegisterPage} />
+          <Route exact={true} path="/aboutUs/" component={AboutUsPage} />
         </div>
       </Router>
     );

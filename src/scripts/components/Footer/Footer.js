@@ -3,10 +3,11 @@ import ContactInfo from './ContactInfo';
 import SocialMedia from './SocialMedia';
 import Divider from '../Divider';
 import Logo from '../Logo';
+import ImportantLinks from './ImportantLinks';
 
 const footer = () => {
     return (
-        <div>
+        <div id='footer'>
             <Divider />
             <div className="container">
                 <div className="row">
@@ -18,12 +19,16 @@ const footer = () => {
                             <p>&copy; 2018 Austin Plus Social Good. All Rights Reserved.</p>
                         </div>
                     </div>
+                    <div className="col-3 important-links">
+                        <ImportantLinks />
+                    </div>
                     <div className="col">
                         <div className="float-right">
 
                             <SocialMedia />
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </div>
