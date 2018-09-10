@@ -1,12 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-
 
 const loginRegisterSearch = () => {
     return (
-        <div className='float-right'>
-            <div>
+        <div className='d-inline col' id='navLinkSearch'>
+            
                 <span className="nav-links">
                 <Link to={'/login/'}>
                     Login   
@@ -17,14 +15,14 @@ const loginRegisterSearch = () => {
                     Register 
                 </Link>
                 </span>
-                <form className='float-right' autoComplete="off">
-                    <div className="autocomplete">
+                <form className='d-inline' autoComplete="off">
+                    <span className="autocomplete">
                         <input className="search-box" id="myInput" type="text" name="myCountry" />
                             <i className="fas fa-search"></i>
                         
-                    </div>
+                    </span>
                 </form>
-            </div>
+            
 
 
 

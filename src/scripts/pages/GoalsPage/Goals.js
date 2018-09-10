@@ -7,7 +7,7 @@ import { BrowserRouter as Route } from 'react-router-dom';
 
 const goals = () => {
     return (
-        <div>
+        <div id='goalsPage'>
             <Header />
             <CharityTypeMenu />
             <GroupOfCharities />

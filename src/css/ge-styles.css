@@ -52,7 +52,7 @@ body {
 }
 .autocomplete i.fa-search {
   position: absolute;
-  top: 9px;
+  top: 3px;
   left: 10px;
   color: gray;
 }
@@ -61,7 +61,19 @@ body {
   padding: 10px;
 }
 
+#navLinkSearch {
+  padding-top: 20px;
+}
+
 /* FOOTER STYLES */
+.important-links {
+  padding-top: 60px;
+}
+.important-links p {
+  padding-top: 0%;
+  padding-bottom: 0%;
+}
+
 /* HOMEPAGE STYLES */
 .goal-buttons {
   height: 125px;

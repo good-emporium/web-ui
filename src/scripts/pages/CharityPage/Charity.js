@@ -6,7 +6,7 @@ import Footer from '../../components/Footer/Footer';
 
 const charity = () => {
     return (
-        <div>
+        <div id='charityPage'>
             <Header />
             <div className="container">
                 <div className="row">
