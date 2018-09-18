@@ -39,6 +39,11 @@ body {
   padding: 0;
 }
 
+/* BOOTSTRAP OVERRIDE STYLES */
+.form-control {
+  max-width: 600px;
+}
+
 /* HEADER STYLES */
 .search-box {
   position: relative;
@@ -112,8 +117,7 @@ body {
 }
 .org-card img {
   margin: 15px;
-  width: 80px;
-  height: 80px;
+  max-width: 100px;
 }
 
 .org-card:hover {
