@@ -1,3 +1,8 @@
-
+/* HEADER STYLES */
+@media (max-width: 767px) {
+  #header #navLinkSearch {
+    display: none !important;
+  }
+}
 
 /*# sourceMappingURL=ge-styles-responsive.css.map */
