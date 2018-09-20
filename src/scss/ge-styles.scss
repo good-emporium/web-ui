@@ -1,108 +1,102 @@
 /* GLOBAL STYLES */
 
-body {
-    font-family: 'Montserrat';
-}
+body { font-family: 'Montserrat'; }
+a { text-decoration: none; color: #18a1db; }
+a:hover { text-decoration: none; color: black; }
 
-.img {
-    width: '200px';
-    height: '32px'
-}
+.img { width: '200px'; height: '32px' }
+.ge-blue { color: #18a1db; }
+.ge-red { color: #EA2033; }
+.ge-blue-bold { color: #18a1db; font-weight: bold; }
+.ge-green-bold { color: #8bc540; font-weight: bold; }
+.large-text { font-size:60px; }
+.medium-text { font-size:20px; }
+.no-margin-padding { margin: 0; padding: 0; }
 
-.ge-blue {
-	color: #18a1db;
-}
-
-.ge-red {
-    color: #EA2033;
-}
-
-.ge-blue-bold {
-    color: #18a1db;
-    font-weight: bold;
-}
-
-.ge-green-bold {
-    color: #8bc540;
-    font-weight: bold;
-}
-
-.large-text {
-    font-size:60px;
-}
-
-.medium-text {
-    font-size:20px;
-}
-
-.no-margin-padding {
-	margin: 0;
-	padding: 0;
-}
 
 /* BOOTSTRAP OVERRIDE STYLES */
 
-.form-control {
-	max-width: 600px;
-}
+.form-control { max-width: 600px; }
+
 
 /* HEADER STYLES */
 
-.search-box {
+#header .search-box {
 	position: relative;
     width: 250px;
     border: 3px solid #000;
     border-radius: 25px;
+    padding-left: 10px;
 }
 
-.autocomplete {
+#header .autocomplete {
 	position: relative;
 
 	i.fa-search {
 		position: absolute;
 	    top: 3px;
-	    left: 10px;
+	    right: 10px;
 	    color: gray;
 	}
 }
-.nav-links {
+#header .nav-links {
 	padding: 10px;
 }
 
-#navLinkSearch{
+#header #navLinkSearch{
 	padding-top: 20px;
 }
 
+#header #logoContainer {
+	margin-top: 10px;
+
+	a { text-decoration: none; color: gray; }
+	.ge-logo { width: 200px; }
+	.tagline { padding-left: 40px; }
+}
+
 /* FOOTER STYLES */
-.important-links {
+#footer .important-links {
 	padding-top: 60px;
-	p{
+	p {
 		padding-top: 0%;
 		padding-bottom: 0%; 
 	}
+}
+#footer #logoContainer {
+	.ge-logo { width: 200px; }
+	.tagline { padding-left: 40px; }
 }
 
 
 /* HOMEPAGE STYLES */
 
-.goal-buttons {
+#homePage #goalButtonsContainer {
+	margin-right: 50px;
+}
+
+#homePage #goalButtonsTitle {
+	padding: 0 10px;
+}
+
+#homePage .goal-button {
 	height: 125px;
 	width: 125px;
 	margin: 7.5px;
 	transition: transform 0.2s;
 }
 
-.goal-buttons:hover {
+#homePage .goal-button:hover {
 	transform: scale(1.2);
 }
 
 /* CHARITY PAGE STYLES */
 
-.org-choice:active {
+#goalsPage .org-choice:active {
     font-weight: bold;
     color: #18a1db;
   }
-.org-card {
+#goalsPage .org-card {
 	height: 360px;
 	width: 360px;
 	margin: 1.5rem;
@@ -128,7 +122,7 @@ body {
 		height: 80px;
 	}
 }
-.org-card:hover {
+#goalsPage .org-card:hover {
 	transform: scale(1.1);
 }
 

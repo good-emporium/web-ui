@@ -3,6 +3,16 @@ body {
   font-family: "Montserrat";
 }
 
+a {
+  text-decoration: none;
+  color: #18a1db;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
 .img {
   width: "200px";
   height: "32px";
@@ -39,60 +49,95 @@ body {
   padding: 0;
 }
 
+/* BOOTSTRAP OVERRIDE STYLES */
+.form-control {
+  max-width: 600px;
+}
+
 /* HEADER STYLES */
-.search-box {
+#header .search-box {
   position: relative;
   width: 250px;
   border: 3px solid #000;
   border-radius: 25px;
+  padding-left: 10px;
 }
 
-.autocomplete {
+#header .autocomplete {
   position: relative;
 }
-.autocomplete i.fa-search {
+#header .autocomplete i.fa-search {
   position: absolute;
   top: 3px;
-  left: 10px;
+  right: 10px;
   color: gray;
 }
 
-.nav-links {
+#header .nav-links {
   padding: 10px;
 }
 
-#navLinkSearch {
+#header #navLinkSearch {
   padding-top: 20px;
 }
 
+#header #logoContainer {
+  margin-top: 10px;
+}
+#header #logoContainer a {
+  text-decoration: none;
+  color: gray;
+}
+#header #logoContainer .ge-logo {
+  width: 200px;
+}
+#header #logoContainer .tagline {
+  padding-left: 40px;
+}
+
 /* FOOTER STYLES */
-.important-links {
+#footer .important-links {
   padding-top: 60px;
 }
-.important-links p {
+#footer .important-links p {
   padding-top: 0%;
   padding-bottom: 0%;
 }
 
+#footer #logoContainer .ge-logo {
+  width: 200px;
+}
+#footer #logoContainer .tagline {
+  padding-left: 40px;
+}
+
 /* HOMEPAGE STYLES */
-.goal-buttons {
+#homePage #goalButtonsContainer {
+  margin-right: 50px;
+}
+
+#homePage #goalButtonsTitle {
+  padding: 0 10px;
+}
+
+#homePage .goal-button {
   height: 125px;
   width: 125px;
   margin: 7.5px;
   transition: transform 0.2s;
 }
 
-.goal-buttons:hover {
+#homePage .goal-button:hover {
   transform: scale(1.2);
 }
 
 /* CHARITY PAGE STYLES */
-.org-choice:active {
+#goalsPage .org-choice:active {
   font-weight: bold;
   color: #18a1db;
 }
 
-.org-card {
+#goalsPage .org-card {
   height: 360px;
   width: 360px;
   margin: 1.5rem;
@@ -102,21 +147,21 @@ body {
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.19);
   transition: transform 0.2s;
 }
-.org-card a {
+#goalsPage .org-card a {
   color: #ea2033;
   font-weight: 500;
   font-size: 1.25rem;
 }
-.org-card p {
+#goalsPage .org-card p {
   padding: 15px;
 }
-.org-card img {
+#goalsPage .org-card img {
   margin: 15px;
   width: 80px;
   height: 80px;
 }
 
-.org-card:hover {
+#goalsPage .org-card:hover {
   transform: scale(1.1);
 }
 
