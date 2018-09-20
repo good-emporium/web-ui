@@ -157,8 +157,7 @@ a:hover {
 }
 #goalsPage .org-card img {
   margin: 15px;
-  width: 80px;
-  height: 80px;
+  max-width: 100px;
 }
 
 #goalsPage .org-card:hover {
