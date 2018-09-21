@@ -44,7 +44,7 @@ class GroupOfCharities extends Component {
         <div className="orgs-table d-flex flex-row flex-wrap">
             {items.map(item => (
               <div className="org-card">
-                <img src="{item.logo}" alt='CharityLogo' />
+                <img src={item.logo} alt='CharityLogo' />
                 <Link to={'/org/'}>
                 <div>{item.name}</div>
                 </Link>
