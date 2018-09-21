@@ -97,8 +97,8 @@ a:hover { text-decoration: none; color: black; }
     color: #18a1db;
   }
 #goalsPage .org-card {
-	height: 360px;
-	width: 360px;
+	height: 320px;
+	width: 320px;
 	margin: 1.5rem;
 	padding: 1.5rem;
 	border-radius: 5px;
@@ -117,9 +117,9 @@ a:hover { text-decoration: none; color: black; }
 	}
 
 	img {
-		margin: 15px;
-		width: 80px;
-		height: 80px;
+		max-width: 100%;
+		max-height: 30%;
+		margin-bottom: 10px;
 	}
 }
 #goalsPage .org-card:hover {
