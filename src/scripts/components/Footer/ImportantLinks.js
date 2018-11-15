@@ -4,18 +4,19 @@ import { Link } from 'react-router-dom';
 const importantLinks = () => {
     return (
         <div className="container">
-            <p>
+        <br />
+            <p className="footerSpacing"> 
                 <Link to={'/login/'}>
                     Login
                 </Link>
             </p>
-            <p>
+            <p className="footerSpacing">
                 <Link to={'/register/'}>
                     Register
                 </Link>
             </p>
 
-            <p>
+            <p className="footerSpacing">
                 <Link to={'/aboutUs/'}>
                     About Us
                 </Link>
