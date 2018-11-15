@@ -16,7 +16,7 @@ const footer = () => {
                         <ContactInfo />
 
                         <div className="row">
-                            <p>&copy; 2018 Austin Plus Social Good. All Rights Reserved.</p>
+                            <p>&#169; Social Good US. All Rights Reserved.</p>
                         </div>
                     </div>
                     <div className="col-3 important-links">
@@ -28,7 +28,7 @@ const footer = () => {
                             <SocialMedia />
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
