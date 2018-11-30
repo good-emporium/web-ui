@@ -5,6 +5,9 @@ const charityTypeMenu = () => {
         <div className="container">
             <div className="row">
                 <a href="#">
+                    <p className='org-choice p-2'><u>All</u></p>
+                </a>
+                <a href="#">
                     <p className='org-choice p-2'>non-profit</p>
                 </a>
                 <a href="#">
