@@ -22,6 +22,11 @@ const importantLinks = () => {
                 </Link>
 
             </p>
+            <p className="footerSpacing">
+            <Link to={'/support/'}>
+            Support
+            </Link>
+            </p>
         </div>
     )
 

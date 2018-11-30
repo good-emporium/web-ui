@@ -17,6 +17,7 @@ const form = () => {
                </div>
                 <button className="btn btn-outline-primary" type="submit">Sign In</button>
             </form>
+            <p id="forgotYourPassword"> Forgot Your Password? Click <a href="#">here</a></p>
             <Footer />
         </div>
     )
