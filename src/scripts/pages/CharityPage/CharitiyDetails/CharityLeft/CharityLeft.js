@@ -4,6 +4,7 @@ import CharityData from './CharityData';
 import CharityEmailList from './CharityEmailListSignUp';
 import CharityLogo from './CharityLogo';
 import CharityName from './CharityName';
+import CharityClaimPage from './CharityClaimPage';
 import Divider from '../../../../components/Divider';
 
 const charityLeft = () => {
@@ -15,6 +16,8 @@ const charityLeft = () => {
             <CharityContactInfo />
             <Divider />
             <CharityEmailList />
+            <Divider />
+            <CharityClaimPage />
         </div>
     )
 

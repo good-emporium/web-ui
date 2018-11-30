@@ -6,10 +6,10 @@ const examples = () => {
       <div className="row">
         <div className="col">
           <iframe width="377px" height="212px" src="https://www.youtube.com/embed/27XDnHnzdck" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          <img src="src/assets/img/mobile-loaves-and-fishes-community-first-village-welcome-sign.jpg" alt="Welcome to Community First Village" className="img" style="width:377px; height:212px" />
+          <img src="../../../assets/img/mobile-loaves-and-fishes-community-first-village-welcome-sign.jpg" alt="Welcome to Community First Village" className="exampleofCharityWorkImg"  />
         </div>
         <div className="col">
-          <img src="src/assets/img/mobile-loaves-and-fishes-truck-ministry-2017-homeless-brothers-sisters.jpg" alt="Mobile Loaves and Fishes Heling Hand" className="img" style="width:377px; height:212px" />
+          <img src="../../../assets/img/mobile-loaves-and-fishes-truck-ministry-2017-homeless-brothers-sisters.jpg" alt="Mobile Loaves and Fishes Heling Hand" className="exampleofCharityWorkImg" />
           <br />
           <br />
           <iframe width="377px" height="212px" src="https://www.youtube.com/embed/9FWfZe85sYQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>

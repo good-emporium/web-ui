@@ -1,10 +1,10 @@
 import React from 'react';
-
+import Examples from './Examples';
 const title = () => {
     return (
         <div className="container">
-            <h1>some of their good work</h1>
-
+            <h1><span className="ge-blue"><strong> good</strong></span> in action</h1>
+            <Examples />
 
 
         </div>
