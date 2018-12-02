@@ -11,6 +11,27 @@ import '../scss/ge-styles.scss';
 import '../scss/ge-styles-responsive.scss';
 
 class App extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = { 
+      error: null,
+      isLoaded: false,
+      items: localStorage.getItem('organizations')
+    }
+  }
+
+  componentDidMount() {
+    fetch('https://api.goodemporium.com/v0/organizations')
+      .then(response => response.json())
+      .then(
+        (result) => {
+            localStorage.setItem('organizations', JSON.stringify(result))
+            this.setState({ items: localStorage.getItem('organizations') });
+      })
+    // console.log(this.state.items)
+  }
+
   render() {
     return (
       <Router>
