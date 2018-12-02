@@ -6,10 +6,12 @@ import LoginRegisterSearch from './LoginRegisterSearch';
 const header = () => {
     return (
         <div id='header'>
-        
+            <Head>
+                <meta charSet="utf-8" />
+            </Head>
             <div className='row'>
-            <Logo />
-            <LoginRegisterSearch />
+                <Logo />
+                <LoginRegisterSearch />
             </div>
             <Divider />
 
