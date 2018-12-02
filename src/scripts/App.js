@@ -26,10 +26,24 @@ class App extends Component {
       .then(response => response.json())
       .then(
         (result) => {
-            localStorage.setItem('organizations', JSON.stringify(result))
-            this.setState({ items: localStorage.getItem('organizations') });
+           var JSONObject = [];
+            var jsonData = result;
+            for(var i in jsonData){
+              var key = i;
+              var val = jsonData[i];
+              for(var j in val){
+                  var sub_key = j;
+                  var sub_val = val[j];
+                  JSONObject[j]=val[j];
+              }
+          }
+          
+
+              console.log(JSONObject);
+          var organizations = JSONObject.toString();
+          localStorage.setItem('organizations', JSON.stringify(JSONObject))
+            this.setState({ items: localStorage.getItem(JSONObject)});
       })
-    // console.log(this.state.items)
   }
 
   render() {
