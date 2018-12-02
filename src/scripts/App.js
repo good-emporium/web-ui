@@ -17,7 +17,10 @@ class App extends Component {
     this.state = { 
       error: null,
       isLoaded: false,
-      items: localStorage.getItem('organizations')
+      items: localStorage.getItem('organizations'),
+      goalID: '',
+      orgID: ''
+
     }
   }
 

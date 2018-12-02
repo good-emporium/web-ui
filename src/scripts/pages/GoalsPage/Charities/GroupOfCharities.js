@@ -8,36 +8,31 @@ class GroupOfCharities extends Component {
     super(props)
     this.state = {
       error: null,
-      isLoaded: false,
-      items: []
     }
-  } 
+  }
 
   render() {
     var JSONObj = JSON.parse(localStorage.getItem('organizations'));
-    console.log(JSONObj[0].name);
-    const { error, isLoaded, items } = this.state;
+    // the code you're looking for
+
+    // iterate over each element in the array
+
+    const { error } = this.state;
     if (error) {
       return <div>Error: {error.message}</div>;
-    } else if (!isLoaded) {
-      return <div>Loading...</div>;
     } else {
       return (
         <div className="orgs-table d-flex flex-row flex-wrap">
-
-
-
-
-            {items.map(item => (
-              <div className="org-card">
-                <img src={item.logo} alt='CharityLogo' />
-                <Link to={'/org/'}>
+          {JSONObj.map(item => (
+            <div className="org-card">
+              <img src={item.logo} alt='CharityLogo' />
+              <Link to={'/org/'}>
                 <div>{item.name}</div>
-                </Link>
-                <p>{item.mission_statement}</p>
-                <Route path="/org/" component={CharityPage} />
-              </div>
-            ))}
+              </Link>
+              <p>{item.mission_statement}</p>
+              <Route path="/org/" component={CharityPage} />
+            </div>
+          ))}
         </div>
       );
     }
