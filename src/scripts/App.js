@@ -25,9 +25,8 @@ class App extends Component {
     fetch('https://api.goodemporium.com/v0/organizations')
       .then(response => response.json())
       .then(
-        (result) => {
+        (jsonData) => {
            var JSONObject = [];
-            var jsonData = result;
             for(var i in jsonData){
               var key = i;
               var val = jsonData[i];
@@ -38,9 +37,6 @@ class App extends Component {
               }
           }
           
-
-              console.log(JSONObject);
-          var organizations = JSONObject.toString();
           localStorage.setItem('organizations', JSON.stringify(JSONObject))
             this.setState({ items: localStorage.getItem(JSONObject)});
       })
