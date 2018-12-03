@@ -9,7 +9,8 @@ class GroupOfCharities extends Component {
     this.state = {
       error: null,
       isLoaded: false,
-      items: []
+      items: [],
+      sdgId: props ? props.sdgId : null
     }
   } 
   componentDidMount() {
@@ -34,26 +35,27 @@ class GroupOfCharities extends Component {
     )
   }
   render() {
-    const { error, isLoaded, items } = this.state;
+    const { error, isLoaded, items, sdgId } = this.state;
     if (error) {
       return <div>Error: {error.message}</div>;
     } else if (!isLoaded) {
       return <div>Loading...</div>;
     } else {
-      return (
-        <div className="orgs-table d-flex flex-row flex-wrap">
-            {items.map(item => (
-              <div className="org-card">
-                <img src={item.logo} alt='CharityLogo' />
-                <Link to={'/org/'}>
-                <div>{item.name}</div>
-                </Link>
-                <p>{item.description}</p>
-                <Route path="/org/" component={CharityPage} />
-              </div>
-            ))}
-        </div>
-      );
+    const orgs = !sdgId ? items : items.filter(org => org.sdg_keys? org.sdg_keys.includes(sdgId) : null)
+        return (
+          <div className="orgs-table d-flex flex-row flex-wrap">
+          {orgs.map((item, index) => (
+            <div key={index} className="org-card">
+              <img src={item.logo} alt='CharityLogo' />
+              <Link to={'/org/'}>
+              <div>{item.name}</div>
+              </Link>
+              <p>{item.description}</p>
+              <Route path="/org/" component={CharityPage} />
+            </div>
+          ))}
+      </div>
+        )
     }
   }
 }
