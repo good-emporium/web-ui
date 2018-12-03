@@ -5,12 +5,14 @@ import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import { BrowserRouter as Route } from 'react-router-dom';
 
-const goals = () => {
+const goals = (props) => {
+    const { state } = props.location
+    const sdgId = state ? state.sdgId : null;
     return (
         <div id='goalsPage'>
             <Header />
             <CharityTypeMenu />
-            <GroupOfCharities />
+            <GroupOfCharities sdgId={sdgId}/>
             <Footer />
         </div>
     )
