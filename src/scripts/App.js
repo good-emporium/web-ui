@@ -11,6 +11,40 @@ import '../scss/ge-styles.scss';
 import '../scss/ge-styles-responsive.scss';
 
 class App extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = { 
+      error: null,
+      isLoaded: false,
+      items: localStorage.getItem('organizations'),
+      goalID: '',
+      orgID: ''
+
+    }
+  }
+
+  componentDidMount() {
+    fetch('https://api.goodemporium.com/v0/organizations')
+      .then(response => response.json())
+      .then(
+        (jsonData) => {
+           var JSONObject = [];
+            for(var i in jsonData){
+              var key = i;
+              var val = jsonData[i];
+              for(var j in val){
+                  var sub_key = j;
+                  var sub_val = val[j];
+                  JSONObject[j]=val[j];
+              }
+          }
+          
+          localStorage.setItem('organizations', JSON.stringify(JSONObject))
+            this.setState({ items: localStorage.getItem(JSONObject)});
+      })
+  }
+
   render() {
     return (
       
