@@ -47,6 +47,7 @@ class App extends Component {
 
   render() {
     return (
+      
       <Router>
         <div className="container">
           <Route exact={true} path="/" component={HomePage} />
