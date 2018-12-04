@@ -114,6 +114,10 @@ a:hover { text-decoration: none; color: black; }
 
 	p {
 		padding: 15px;
+    	overflow: scroll;
+    	text-overflow: ellipsis;
+    	resize: vertical;
+    	height: 115px;
 	}
 
 	img {
