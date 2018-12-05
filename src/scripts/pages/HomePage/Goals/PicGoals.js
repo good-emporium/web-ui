@@ -11,89 +11,89 @@ const picGoals = () => {
                         <div className="d-flex flex-wrap justify-content-end">
 
                                 <div className="goal-button">
-                                        <Link to={'/goal/poverty'}>
-                                                <img className='img-fluid' src="./../../../assets/img/E_SDG goals_icons-individual-rgb-01.png" alt="" id='goal1' />
+                                        <Link to={{ pathname: '/goal/poverty', state: { sdgId: '1' }}}>
+                                                <img className='img-fluid' src="./../../../assets/img/E_SDG goals_icons-individual-rgb-01.png" alt="" />
                                         </Link>
                                 </div>
 
                                 <div className="goal-button">
-                                        <Link to={'/goal/zeroHunger'}>
-                                                <img className='img-fluid' src="./../../../assets/img/E_SDG goals_icons-individual-rgb-02.png" alt="" id='goal2'/>
+                                        <Link to={{ pathname: '/goal/zeroHunger', state: { sdgId: '2' }}}>
+                                                <img className='img-fluid' src="./../../../assets/img/E_SDG goals_icons-individual-rgb-02.png" alt="" />
                                         </Link>
                                 </div>
                                 <div className="goal-button">
-                                        <Link to={'/goal/goodHealth'}>
-                                                <img className='img-fluid' src="./../../../assets/img/E_SDG goals_icons-individual-rgb-03.png" alt="" id='goal3'/>
+                                        <Link to={{ pathname: '/goal/goodHealth', state: { sdgId: '3' }}}>
+                                                <img className='img-fluid' src="./../../../assets/img/E_SDG goals_icons-individual-rgb-03.png" alt="" />
                                         </Link>
                                 </div>
                                 <div className="goal-button">
-                                        <Link to={'/goal/qualityEducation'}>
-                                                <img className='img-fluid' src="./../../../assets/img/E_SDG goals_icons-individual-rgb-04.png" alt="" id='goal4'/>
+                                        <Link to={{ pathname: '/goal/qualityEducation', state: { sdgId: '4' }}}>
+                                                <img className='img-fluid' src="./../../../assets/img/E_SDG goals_icons-individual-rgb-04.png" alt="" />
                                         </Link>
                                 </div>
                                 <div className="goal-button">
-                                        <Link to={'/goal/genderEquality'}>
-                                                <img className='img-fluid' src="./../../../assets/img/E_SDG goals_icons-individual-rgb-05.png" alt="" id='goal5'/>
+                                        <Link to={{ pathname: '/goal/genderEquality', state: { sdgId: '5' }}}>
+                                                <img className='img-fluid' src="./../../../assets/img/E_SDG goals_icons-individual-rgb-05.png" alt="" />
                                         </Link>
                                 </div>
                                 <div className="goal-button">
-                                        <Link to={'/goal/cleanWater'}>
-                                                <img className='img-fluid' src="./../../../assets/img/E_SDG goals_icons-individual-rgb-06.png" alt="" id='goal6'/>
+                                        <Link to={{ pathname: '/goal/cleanWater', state: { sdgId: '6' }}}>
+                                                <img className='img-fluid' src="./../../../assets/img/E_SDG goals_icons-individual-rgb-06.png" alt="" />
                                         </Link>
                                 </div>
                                 <div className="goal-button">
-                                        <Link to={'/goal/cleanEnergy'}>
-                                                <img className='img-fluid' src="./../../../assets/img/E_SDG goals_icons-individual-rgb-07.png" alt="" id='goal7'/>
+                                        <Link to={{ pathname: '/goal/cleanEnergy', state: { sdgId: '7' }}}>
+                                                <img className='img-fluid' src="./../../../assets/img/E_SDG goals_icons-individual-rgb-07.png" alt="" />
                                         </Link>
                                 </div>
                                 <div className="goal-button">
-                                        <Link to={'/goal/decentWork'}>
-                                                <img className='img-fluid' src="./../../../assets/img/E_SDG goals_icons-individual-rgb-08.png" alt="" id='goal8'/>
+                                        <Link to={{ pathname: '/goal/decentWork', state: { sdgId: '8' }}}>
+                                                <img className='img-fluid' src="./../../../assets/img/E_SDG goals_icons-individual-rgb-08.png" alt="" />
                                         </Link>
                                 </div>
                                 <div className="goal-button">
-                                        <Link to={'/goal/industry'}>
-                                                <img className='img-fluid' src="./../../../assets/img/E_SDG goals_icons-individual-rgb-09.png" alt="" id='goal9'/>
+                                        <Link to={{ pathname: '/goal/industry', state: { sdgId: '9' }}}>
+                                                <img className='img-fluid' src="./../../../assets/img/E_SDG goals_icons-individual-rgb-09.png" alt="" />
                                         </Link>
                                 </div>
                                 <div className="goal-button" >
-                                        <Link to={'/goal/reducedInequalities'}>
-                                                <img className='img-fluid' src="./../../../assets/img/E_SDG goals_icons-individual-rgb-10.png" alt="" id='goal10'/>
+                                        <Link to={{ pathname: '/goal/reducedInequalities', state: { sdgId: '10' }}}>
+                                                <img className='img-fluid' src="./../../../assets/img/E_SDG goals_icons-individual-rgb-10.png" alt="" />
                                         </Link>
                                 </div>
                                 <div className="goal-button" >
-                                        <Link to={'/goal/sustainableCities'}>
-                                                <img className='img-fluid' src="./../../../assets/img/E_SDG goals_icons-individual-rgb-11.png" alt="" id='goal11'/>
+                                        <Link to={{ pathname: '/goal/sustainableCities', state: { sdgId: '11' }}}>
+                                                <img className='img-fluid' src="./../../../assets/img/E_SDG goals_icons-individual-rgb-11.png" alt="" />
                                         </Link>
                                 </div>
                                 <div className="goal-button" >
-                                        <Link to={'/goal/responsibleConsumption'}>
-                                                <img className='img-fluid' src="./../../../assets/img/E_SDG goals_icons-individual-rgb-12.png" alt="" id='goal12'/>
+                                        <Link to={{ pathname: '/goal/responsibleConsumption', state: { sdgId: '12' }}}>
+                                                <img className='img-fluid' src="./../../../assets/img/E_SDG goals_icons-individual-rgb-12.png" alt="" />
                                         </Link>
                                 </div>
                                 <div className="goal-button" >
-                                        <Link to={'/goal/clientAction'}>
-                                                <img className='img-fluid' src="./../../../assets/img/E_SDG goals_icons-individual-rgb-13.png" alt="" id='goal13'/>
+                                        <Link to={{ pathname: '/goal/clientAction', state: { sdgId: '13' }}}>
+                                                <img className='img-fluid' src="./../../../assets/img/E_SDG goals_icons-individual-rgb-13.png" alt="" />
                                         </Link>
                                 </div>
                                 <div className="goal-button" >
-                                        <Link to={'/goal/lifeBelowWater'}>
-                                                <img className='img-fluid' src="./../../../assets/img/E_SDG goals_icons-individual-rgb-14.png" alt="" id='goal14'/>
+                                        <Link to={{ pathname: '/goal/lifeBelowWater', state: { sdgId: '14' }}}>
+                                                <img className='img-fluid' src="./../../../assets/img/E_SDG goals_icons-individual-rgb-14.png" alt="" />
                                         </Link>
                                 </div>
                                 <div className="goal-button" >
-                                        <Link to={'/goal/lifeOnLand'}>
-                                                <img className='img-fluid' src="./../../../assets/img/E_SDG goals_icons-individual-rgb-15.png" alt="" id='goal15'/>
+                                        <Link to={{ pathname: '/goal/lifeOnLand', state: { sdgId: '15' }}}>
+                                                <img className='img-fluid' src="./../../../assets/img/E_SDG goals_icons-individual-rgb-15.png" alt="" />
                                         </Link>
                                 </div>
                                 <div className="goal-button" >
-                                        <Link to={'/goal/peaceJustice'}>
-                                                <img className='img-fluid' src="./../../../assets/img/E_SDG goals_icons-individual-rgb-16.png" alt="" id='goal16'/>
+                                        <Link to={{ pathname: '/goal/peaceJustice', state: { sdgId: '16' }}}>
+                                                <img className='img-fluid' src="./../../../assets/img/E_SDG goals_icons-individual-rgb-16.png" alt="" />
                                         </Link>
                                 </div>
                                 <div className="goal-button" >
-                                        <Link to={'/goal/partnershipForTheGoals'}>
-                                                <img className='img-fluid' src="./../../../assets/img/E_SDG goals_icons-individual-rgb-17.png" alt="" id='goal17'/>
+                                        <Link to={{ pathname: '/goal/partnershipForTheGoals', state: { sdgId: '17' }}}>
+                                                <img className='img-fluid' src="./../../../assets/img/E_SDG goals_icons-individual-rgb-17.png" alt="" />
                                         </Link>
                                 </div>
                         </div>

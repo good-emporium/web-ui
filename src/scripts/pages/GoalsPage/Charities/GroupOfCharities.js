@@ -8,11 +8,29 @@ class GroupOfCharities extends Component {
     super(props)
     this.state = {
       error: null,
+      sdgId: props ? props.sdgId : null,
+      classification: null
+    }
+  }
+
+  componentDidUpdate(prevProps) {
+    if(this.props.classification !== prevProps.classification) {
+      this.setState({
+        classification: this.props.classification
+      })
     }
   }
 
   render() {
     var JSONObj = JSON.parse(localStorage.getItem('organizations'));
+    const { sdgId, classification } = this.state;
+    let orgs = !sdgId ? JSONObj : JSONObj.filter(org => org.sdg_keys? org.sdg_keys.includes(sdgId) : null)
+    let organizationType = ''
+    if (classification && classification !== 'All') {
+      organizationType = classification === 'Government-org' ? 'government' : classification.toLowerCase()
+      orgs = orgs.filter(org => org.classification === classification)
+    }
+
     // the code you're looking for
 
     // iterate over each element in the array
@@ -23,8 +41,8 @@ class GroupOfCharities extends Component {
     } else {
       return (
         <div className="orgs-table d-flex flex-row flex-wrap">
-          {JSONObj.map(item => (
-            <div className="org-card">
+          {orgs.length > 0 ? orgs.map((item, index) => (
+            <div key={index} className="org-card">
               <img src={item.logo} alt='CharityLogo' />
               <Link to={'/org/'}>
                 <div>{item.name}</div>
@@ -32,7 +50,7 @@ class GroupOfCharities extends Component {
               <p>{item.mission_statement}</p>
               <Route path="/org/" component={CharityPage} />
             </div>
-          ))}
+          )) : <div>There are currently no {organizationType} organizations associated with this Sustainable Development Goal</div>}
         </div>
       );
     }
