@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import HomePage from './pages/HomePage/HomePage';
+import {
+  Route,
+  HashRouter
+} from "react-router-dom";import HomePage from './pages/HomePage/HomePage';
 import GoalsPage from './pages/GoalsPage/Goals';
 import CharityPage from './pages/CharityPage/Charity';
 import LoginPage from './pages/LoginPage/Form';
@@ -47,18 +49,19 @@ class App extends Component {
 
   render() {
     return (
-      
-      <Router>
-        <div className="container">
+        <div className="container" id="app">
+        <HashRouter>
+          <div className="content">
           <Route exact={true} path="/" component={HomePage} />
           <Route path="/goal/" component={GoalsPage} />
           <Route path="/org/" component={CharityPage} />
-          <Route path="/login/" component={LoginPage} />
-          <Route path="/register/" component={RegisterPage} />
+          <Route exact={true} path="/login/" component={LoginPage} />
+          <Route exact={true} path="/register/" component={RegisterPage} />
           <Route exact={true} path="/aboutUs/" component={AboutUsPage} />
           <Route exact={true} path="/Support/" component={Support} />
-        </div>
-      </Router>
+          </div>
+      </HashRouter>
+      </div>
     );
   }
 }
