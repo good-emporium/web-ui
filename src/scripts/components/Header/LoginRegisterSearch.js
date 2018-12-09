@@ -17,7 +17,7 @@ const loginRegisterSearch = () => {
                 </span>
                 <form className='d-inline' autoComplete="off">
                     <span className="autocomplete">
-                        <input className="search-box" id="myInput" type="text" name="myCountry" />
+                        <input className="search-box" id="myInput" type="text" name="myCountry" placeholder="search to find your good..."/>
                             <i className="fas fa-search"></i>
                         
                     </span>

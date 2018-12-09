@@ -11,12 +11,8 @@ const homePage = () => {
             <Goals />
             <CauseMap />
             <Footer />
-
-
         </div>
     )
-
-
 };
 
 export default homePage;

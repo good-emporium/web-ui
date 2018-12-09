@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {
   Route,
-  HashRouter
+  BrowserRouter
 } from "react-router-dom";import HomePage from './pages/HomePage/HomePage';
 import GoalsPage from './pages/GoalsPage/Goals';
 import CharityPage from './pages/CharityPage/Charity';
@@ -50,8 +50,7 @@ class App extends Component {
   render() {
     return (
         <div className="container" id="app">
-        <HashRouter>
-          <div className="content">
+        <BrowserRouter>
           <Route exact={true} path="/" component={HomePage} />
           <Route path="/goal/" component={GoalsPage} />
           <Route path="/org/" component={CharityPage} />
@@ -59,8 +58,7 @@ class App extends Component {
           <Route exact={true} path="/register/" component={RegisterPage} />
           <Route exact={true} path="/aboutUs/" component={AboutUsPage} />
           <Route exact={true} path="/Support/" component={Support} />
-          </div>
-      </HashRouter>
+      </BrowserRouter>
       </div>
     );
   }
