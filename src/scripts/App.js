@@ -27,24 +27,33 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch('https://api.goodemporium.com/v0/organizations')
-      .then(response => response.json())
-      .then(
-        (jsonData) => {
-          var JSONObject = [];
-          for (var i in jsonData) {
-            var key = i;
-            var val = jsonData[i];
-            for (var j in val) {
-              var sub_key = j;
-              var sub_val = val[j];
-              JSONObject[j] = val[j];
+    if (!localStorage.getItem('organizations')) {
+      fetch('https://api.goodemporium.com/v0/organizations')
+        .then(response => response.json())
+        .then(
+          (jsonData) => {
+            var JSONObject = [];
+            for (var i in jsonData) {
+              var key = i;
+              var val = jsonData[i];
+              for (var j in val) {
+                var sub_key = j;
+                var sub_val = val[j];
+                JSONObject[j] = val[j];
+              }
             }
-          }
+            if (typeof localStorage === 'object') {
+              try {
+              localStorage.setItem('organizations', JSON.stringify(JSONObject));
+              } catch (e) {
+           // silently ignore when localStorage is unavailable. The most likely case is private browsing mode.
+              }
+            }
+             this.setState({ items: localStorage.getItem(JSONObject) });
 
-          localStorage.setItem('organizations', JSON.stringify(JSONObject))
-          this.setState({ items: localStorage.getItem(JSONObject) });
-        })
+          })
+      }
+
   }
 
   render() {

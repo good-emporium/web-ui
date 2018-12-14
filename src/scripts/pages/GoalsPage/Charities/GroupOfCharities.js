@@ -44,7 +44,12 @@ class GroupOfCharities extends Component {
           {orgs.length > 0 ? orgs.map((item, index) => (
             <div key={index} className="org-card">
               <img src={item.logo} alt='CharityLogo' />
-              <Link to={'/org/'}>
+              <Link to={{
+                pathname: '/org/',
+                state: {
+                  organization: {item}
+                }
+              }}>
                 <div>{item.name}</div>
               </Link>
               <p>{item.mission_statement}</p>
