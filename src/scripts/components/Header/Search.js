@@ -34,7 +34,6 @@ class Search extends Component {
                 <span className="autocomplete search-box">
                     <input
                         id="searchInput"
-                        style={{ border: 'none' }}
                         type="text"
                         name="search"
                         placeholder="search to find your good..."
@@ -45,6 +44,7 @@ class Search extends Component {
                         type="submit">
                         <i className="fas fa-search" aria-hidden="true"></i>
                     </button>
+                        
                 </span>
             </form>
         )
