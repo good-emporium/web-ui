@@ -1,32 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Search from './Search';
 
 const loginRegisterSearch = () => {
     return (
         <div className='d-inline col' id='navLinkSearch'>
-            
-                <span className="nav-links">
+            <span className="nav-links">
                 <Link to={'/login/'}>
-                    Login   
+                    Login
                 </Link>
-                </span>
-                <span className="nav-links">
+            </span>
+            <span className="nav-links">
                 <Link to={'/register/'}>
-                    Register 
+                    Register
                 </Link>
-                </span>
-                <form className='d-inline' autoComplete="off">
-                    <span className="autocomplete">
-                        <input className="search-box" id="myInput" type="text" name="myCountry" placeholder="search to find your good..."/>
-                            <i className="fas fa-search"></i>
-                        
-                    </span>
-                </form>
-            
-
-
-
-
+            </span>
+           <Search></Search>
         </div>
     )
 

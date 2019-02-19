@@ -6,7 +6,7 @@ import Footer from '../../components/Footer/Footer';
 
 const goals = (props) => {
     const { state } = props.location
-    const { classification, sdgId } = state ? state : null;
+    const { classification, sdgId } = state ? state : {};
     return (
         <div id='goalsPage'>
             <Header />
