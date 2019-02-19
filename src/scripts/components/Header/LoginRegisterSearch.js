@@ -11,9 +11,6 @@ const loginRegisterSearch = () => {
                 </Link>
                 </span>
                 <span className="nav-links">
-                <Link to={'/register/'}>
-                    Register 
-                </Link>
                 </span>
                 <form className='d-inline' autoComplete="off">
                     <span className="autocomplete">

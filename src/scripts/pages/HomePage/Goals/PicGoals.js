@@ -6,7 +6,7 @@ const picGoals = () => {
         return (
                 <div className='icon-box d-flex flex-column my-3' id="goalButtonsContainer">
                         <div className="ge-blue">
-                                <p className='text-right my-0' id="goalButtonsTitle">BROWSE BY UN GLOBAL GOALS</p>
+                                <p className='text-right my-0' id="goalButtonsTitle">BROWSE BY UNITED NATIONS GLOBAL GOALS</p>
                         </div>
                         <div className="d-flex flex-wrap justify-content-end">
 
