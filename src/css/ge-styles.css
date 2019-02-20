@@ -49,6 +49,15 @@ a:hover {
   padding: 0;
 }
 
+.tab {
+  margin-left: 40px;
+}
+
+.noParagraphSpace {
+  margin: 0;
+  padding: 0;
+}
+
 /* BOOTSTRAP OVERRIDE STYLES */
 .form-control {
   max-width: 600px;
@@ -154,6 +163,10 @@ a:hover {
 }
 #goalsPage .org-card p {
   padding: 15px;
+  overflow: scroll;
+  text-overflow: ellipsis;
+  resize: vertical;
+  height: 115px;
 }
 #goalsPage .org-card img {
   max-width: 100%;
