@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Link, Route } from 'react-router-dom';
+import { Link, Route, withRouter } from 'react-router-dom';
 import CharityPage from '../../CharityPage/Charity';
+import charity from '../../CharityPage/Charity';
 
 
 class GroupOfCharities extends Component {
@@ -9,7 +10,8 @@ class GroupOfCharities extends Component {
     this.state = {
       error: null,
       sdgId: props ? props.sdgId : null,
-      classification: null
+      classification: null,
+      fromSearch: props.location.state.fromSearch || false
     }
   }
 
@@ -21,9 +23,14 @@ class GroupOfCharities extends Component {
     }
   }
 
+  sourceParser() {
+    const charities = JSON.parse(localStorage.getItem('searchResults'))
+    return charities.map(charity => charity._source)
+  }
+
   render() {
-    var JSONObj = JSON.parse(localStorage.getItem('organizations'));
-    const { sdgId, classification } = this.state;
+    const { sdgId, classification, fromSearch } = this.state;
+    var JSONObj = fromSearch ?  this.sourceParser() : JSON.parse(localStorage.getItem('organizations'));
     let orgs = !sdgId ? JSONObj : JSONObj.filter(org => org.sdg_keys? org.sdg_keys.includes(sdgId) : null)
     let organizationType = ''
     if (classification && classification !== 'All') {
@@ -57,4 +64,4 @@ class GroupOfCharities extends Component {
   }
 }
 
-export default GroupOfCharities;
+export default withRouter(GroupOfCharities);
