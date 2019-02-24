@@ -55,8 +55,8 @@ const form = () => {
                             <input type="text" className="text-line"  name="country" />
                         </div>
                         <div className="form-group">
-                            <label htmlFor="zipCode"><b>Zip Code:</b></label>
-                            <input type="text" className="text-line"  name="zipCode" />
+                            <label htmlFor="postalCode"><b>Postal Code:</b></label>
+                            <input type="text" className="text-line"  name="postalCode" />
                         </div>
                         <div className="form-group">
                             <label htmlFor="phoneNumber"><b>Phone Number:</b></label>
@@ -64,12 +64,6 @@ const form = () => {
                         </div>
                         
                         </div>
-                        
-                        </div>
-                        <div className="form-group">
-                            <label htmlFor="bio"><b>Bio:</b></label>
-                            <input type="text" className="text-line"  name="bio" />
-                        
                         
                         </div>
                         <button className="btn btn-outline-primary" type="submit">Sign Up</button>
