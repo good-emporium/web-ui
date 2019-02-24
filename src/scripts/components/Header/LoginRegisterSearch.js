@@ -10,11 +10,6 @@ const loginRegisterSearch = () => {
                     Login
                 </Link>
             </span>
-            <span className="nav-links">
-                <Link to={'/register/'}>
-                    Register
-                </Link>
-            </span>
            <Search></Search>
         </div>
     )
