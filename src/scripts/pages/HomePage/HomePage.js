@@ -9,7 +9,6 @@ const homePage = () => {
         <div id='homePage'>
             <Header />
             <Goals />
-            <CauseMap />
             <Footer />
         </div>
     )
